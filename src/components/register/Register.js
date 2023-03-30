@@ -19,7 +19,7 @@ const Register = () => {
         r.target.reset();
     }
 
-    const goToRegisterPage = () => {
+    const paginaInicial = () => {
         navigate('/')
       }
   
@@ -33,7 +33,7 @@ const Register = () => {
                 <input type="password" onChange={e=> setPassword(e.target.value)}></input>
                 <button type="submit" className="salvar">Salvar</button>
                 <div className="cadastrado">
-                <button type="button" className='cadastrado' onClick={goToRegisterPage}>Já Cadastrado</button>
+                <button type="button" className='cadastrado' onClick={paginaInicial}>Já Cadastrado</button>
                 </div>
              </form>
         </main>
